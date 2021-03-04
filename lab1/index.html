@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Погода</title>
+    <link rel="stylesheet" href="src/style/index.css">
+</head>
+<body>
+<div class="main_wrapper">
+    <header>
+        <h1 class="header_title">Погода здесь</h1>
+        <button class="header_refresh">
+            Обновить геолокацию
+        </button>
+        <button class="header_refresh_mobile">
+            <img src="src/img/refresh.png"
+                 alt="refresh"
+                class="header_refresh_mobile_image">
+        </button>
+        <div></div>
+    </header>
+    <main>
+        <section class="main_city_weather_block">
+            <div class="main_city_weather_block_common">
+                <div class="main_city">
+                    <h2>
+                        Москва
+                    </h2>
+                    <div class="main_city_flex">
+                        <img src="src/img/weather/rain.png"
+                             class="main_city__icon" alt="weather icon"/>
+                        <div class="main_city__temperature">
+                            +2°C
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_city_weather_detail">
+                <ul>
+                    <li class="weather_row">
+                        <div class="weather_row_title">Ветер</div>
+                        <div class="weather_row_value">55 m/s</div>
+                    </li>
+                    <li class="weather_row">
+                        <div class="weather_row_title">Облачность</div>
+                        <div class="weather_row_value">No clouds</div>
+                    </li>
+                    <li class="weather_row">
+                        <div class="weather_row_title">Давление</div>
+                        <div class="weather_row_value">757 мм рт ст</div>
+                    </li>
+                    <li class="weather_row">
+                        <div class="weather_row_title">Влажность</div>
+                        <div class="weather_row_value">76%</div>
+                    </li>
+                    <li class="weather_row">
+                        <div class="weather_row_title">Координаты</div>
+                        <div class="weather_row_value">59°57′ с. ш. 30°19′ в. д.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="city_search_block mt-1rem">
+            <h3>
+                Избранное
+            </h3>
+            <div class="city_search_form">
+                <div class="mr-1rem">
+                    <label>
+                        <input type="text" placeholder="Добавить новый город">
+                    </label>
+                </div>
+                <div class="city_search_form-btn">
+                    +
+                </div>
+            </div>
+        </section>
+        <section>
+            <ul class="main_weather_list">
+                <li class="mt-2rem">
+                    <div class="city">
+                        <h4>
+                            Санкт-Петербург
+                        </h4>
+                        <div class="city_temperature">
+                            -5°
+                        </div>
+                        <img src="src/img/weather/rain.png"
+                             class="city_extra__icon" alt="weather icon"/>
+                        <div class="city_remove">
+                            ✖
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Wind</div>
+                            <div class="weather_row_value">Very windy</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Cloudiness</div>
+                            <div class="weather_row_value">Very cloudy</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Pressure</div>
+                            <div class="weather_row_value">No pressure</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Humidity</div>
+                            <div class="weather_row_value">50%</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Coordinates</div>
+                            <div class="weather_row_value">69.14 88.12</div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mt-2rem">
+                    <div class="city">
+                        <h4>
+                            Нижний Новгород
+                        </h4>
+                        <div class="city_temperature">
+                            -2°
+                        </div>
+                        <img src="src/img/weather/rain.png"
+                             class="city_extra__icon" alt="weather icon"/>
+                        <div class="city_remove">
+                            ✖
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Wind</div>
+                            <div class="weather_row_value">Very windy</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Cloudiness</div>
+                            <div class="weather_row_value">Very cloudy</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Pressure</div>
+                            <div class="weather_row_value">No pressure</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Humidity</div>
+                            <div class="weather_row_value">50%</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Coordinates</div>
+                            <div class="weather_row_value">69.14 88.12</div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mt-2rem">
+                    <div class="city">
+                        <h4>
+                            Мытищи
+                        </h4>
+                        <div class="city_temperature">
+                            -2°
+                        </div>
+                        <img src="src/img/weather/rain.png" class="city_extra__icon"
+                             alt="weather icon"/>
+                        <div class="city_remove">
+                            ✖
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Wind</div>
+                            <div class="weather_row_value">Very windy</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Cloudiness</div>
+                            <div class="weather_row_value">Very cloudy</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Pressure</div>
+                            <div class="weather_row_value">No pressure</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Humidity</div>
+                            <div class="weather_row_value">50%</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Coordinates</div>
+                            <div class="weather_row_value">69.14 88.12</div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mt-2rem">
+                    <div class="city">
+                        <h4>
+                            Химки
+                        </h4>
+                        <div class="city_temperature">
+                            +2°
+                        </div>
+                        <img src="src/img/weather/rain.png"
+                             class="city_extra__icon" alt="weather icon"/>
+                        <div class="city_remove">
+                            ✖
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Wind</div>
+                            <div class="weather_row_value">Very windy</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Cloudiness</div>
+                            <div class="weather_row_value">Very cloudy</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Pressure</div>
+                            <div class="weather_row_value">No pressure</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Humidity</div>
+                            <div class="weather_row_value">50%</div>
+                        </li>
+                        <li class="weather_row">
+                            <div class="weather_row_title">Coordinates</div>
+                            <div class="weather_row_value">69.14 88.12</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
+</body>
+</html>
